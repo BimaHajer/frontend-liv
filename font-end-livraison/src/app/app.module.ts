@@ -8,11 +8,13 @@ import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import '@cds/core/icon/register.js';
 import { ClarityIcons, userIcon } from '@cds/core/icon';
+import { UsersComponent } from './add-user/users/users.component';
 
 ClarityIcons.addIcons(userIcon);
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
